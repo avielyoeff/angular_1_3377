@@ -1,0 +1,10 @@
+<h2>You ordered 
+  {{PizzaArray.length}} 
+  pizzas</h2>
+  
+<button (click)="onPizzaClick()">add new pizza</button>
+
+<div *ngFor="let x of PizzaArray">
+  <h2>Pizza number {{x}}</h2>
+  <app-pizza></app-pizza>
+</div>

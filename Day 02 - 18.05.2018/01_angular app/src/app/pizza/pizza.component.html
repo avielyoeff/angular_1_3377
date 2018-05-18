@@ -1,0 +1,16 @@
+<p>
+  pizza {{classCounter}} Details: 
+</p>
+
+
+<div *ngIf="classCounter">
+  <table class="table">
+    <tr *ngFor="let x of toppings; let i=index">
+      <td> <button (click)="updateTop(i)">{{x.topName}}</button> </td>
+
+     <td> ammount in order: {{x.amount}}</td>
+   </tr>
+  </table>
+</div>
+
+<hr>
